@@ -6,8 +6,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "nyc --reporter=html --reporter=text mocha",
-    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
+    "test": "nyc mocha",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "author": "",
   "license": "ISC",
@@ -17,7 +17,6 @@
     "nyc": "^15.1.0"
   },
   "dependencies": {
-    "npm-git-install": "^0.3.0"
   },
   "repository": {
     "type": "git",
