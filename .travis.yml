@@ -7,5 +7,4 @@ script:
   - npm install
 
 after_sucess:  
-  - npm run test && npm run coverage
-  - bash <(curl -s https://codecov.io/bash)
+  - npm run test && bash <(curl -s https://codecov.io/bash) -v
