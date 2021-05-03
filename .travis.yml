@@ -3,6 +3,7 @@ language: node_js
 script: 
   - npm install codecov nyc --save-dev
   - npm install mocha-lcov-reporter --save-dev
+  - npm install
 
 after_sucess:  
   - npm run test && npm run coverage
