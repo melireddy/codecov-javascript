@@ -5,5 +5,5 @@ before_install:
   - npm i -D nyc
   - cd istanbul-mocha && npm install && cd ..
 script:
-  - nyc --reporter=lcov mocha && codecov
+  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
   - codecov
