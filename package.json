@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "codecov": "^3.8.1",
     "mocha": "^8.3.2",
     "nyc": "^15.1.0"
   },
