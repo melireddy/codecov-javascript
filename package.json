@@ -7,8 +7,7 @@
   },
   "scripts": {
     "test": "nyc mocha",
-    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "coverage": "./node_modules/.bin/codecov --disable=gcov"
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "author": "",
   "license": "ISC",
