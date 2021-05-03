@@ -1,5 +1,11 @@
 language:
   node_js
+node_js:
+  - 10
+  - 9
+  - 8
+  - 7
+  - 6
 before_install:
   - npm install --save-dev codecov
   - npm install --save-dev mocha
