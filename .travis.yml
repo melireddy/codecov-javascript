@@ -4,4 +4,4 @@ script:
   - npm install codecov nyc --save-dev
   - npm install mocha-lcov-reporter --save-dev
 
-after_success: npm run report-coverage
+after_success: npm run coverage
