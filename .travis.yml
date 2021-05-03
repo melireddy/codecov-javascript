@@ -3,6 +3,8 @@ language:
 before_install:
   - npm install -g codecov
   - npm i nyc
+  - cd istanbul-mocha && npm install && cd ..
 script:
+  - cd istanbul-mocha && npm test
   - nyc --reporter=lcov mocha && codecov
   - codecov
