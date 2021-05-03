@@ -4,7 +4,7 @@ before_install:
   - npm install -g codecov
   - npm install --save-dev mocha
   - npm install --save-dev nyc
-  - npm ci
+  - make test
 script:
   - npm test
   - npm run test
