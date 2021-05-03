@@ -5,6 +5,7 @@ script:
   - npm install codecov nyc --save-dev
   - npm install mocha --save-dev
   - npm install mocha-lcov-reporter --save-dev
+  - npm install selenium-webdriver --save-dev 
   - npm install
 
 after_sucess:  
