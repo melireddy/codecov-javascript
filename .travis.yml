@@ -7,4 +7,3 @@ script:
 
 after_sucess:  
   - npm run test && npm run coverage
-  - codecov
