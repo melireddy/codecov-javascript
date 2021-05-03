@@ -2,8 +2,8 @@ language:
   node_js
 before_install:
   - npm install -g codecov
-  - npm i -D nyc
-  - cd istanbul-mocha && npm install && cd ..
+  - npm install --save-dev mocha
+  - npm init
 script:
-  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
+  - ./node_modules/mocha/bin/mocha
   - codecov
