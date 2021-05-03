@@ -7,7 +7,7 @@
   },
   "scripts": {
     "test": "nyc mocha",
-    "coverage": "./node_modules/.bin/codecov"
+    "coverage": "./node_modules/.bin/codecov --disable=gcov"
   },
   "author": "",
   "license": "ISC",
