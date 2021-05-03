@@ -3,7 +3,6 @@ language:
 before_install:
   - npm install -g codecov
   - npm install --save-dev mocha
-  - npm init
 script:
   - ./node_modules/mocha/bin/mocha
   - codecov
