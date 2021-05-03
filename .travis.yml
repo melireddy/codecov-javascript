@@ -5,5 +5,6 @@ before_install:
   - npm install --save-dev mocha
   - npm install --save-dev nyc
 script:
+  - npm test
   - npm run test
   - npm run report-coverage
