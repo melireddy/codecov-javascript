@@ -5,6 +5,7 @@ before_install:
   - npm install --save-dev mocha
   - npm install --save-dev nyc
 script:
-  - istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec
+  - nyc npm test
+  - nyc report --reporter=text-lcov > coverage.lcov
   - ./node_modules/.bin/codecov
   - codecov
